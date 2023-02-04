@@ -3,5 +3,10 @@
 
 
 void RobotLine::radionica() {
+  if (lineAny()) {
+    stop();
+    end();
+  }
   labirint();
+
 }
