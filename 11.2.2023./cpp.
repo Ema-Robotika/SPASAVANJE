@@ -1476,7 +1476,17 @@ void RobotLine::loptica() {
     go(80, 0);
     delayMs(500);
     armCatchReady();
+    delayMs(600);
     armCatch();
-
+    stop();
+    delayMs(500);
+    go(-30,-30);
+    delayMs(800);
+    go(0,80);
+    delayMs(1000);
+    go(-80,-80);
+    delayMs(1500);
+    stop();
+    end();
   }
 }
